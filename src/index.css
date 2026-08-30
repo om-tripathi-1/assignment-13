@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-bg: #f2efe7;
+  --color-surface: rgba(255, 255, 255, 0.15);
+  --color-surface-solid: #ffffff;
+
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-text-light: #777777;
+
+  --color-border: #111111;
+  --color-border-light: rgba(17, 17, 17, 0.2);
+
+  --color-hover: #c8dfdb;
+  --color-active: #66a3bf;
+
+  --color-success: #c8f0d2;
+  --color-success-text: #16752b;
+
+  --color-danger: #f7d6d6;
+  --color-danger-text: #7d1f1f;
+
+  --font-family:
+    "JetBrains Mono",
+    monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.75rem;
+
+  --font-size-hero:
+    clamp(2.5rem, 7vw, 5rem);
+
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.1;
+
+  --letter-spacing-label: 0.08em;
+
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --space-3xl: 3rem;
+  --space-4xl: 5rem;
+
+  --border-width: 2px;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  --container-width:
+    min(120rem, 95%);
+
+  --card-image-height: 220px;
+
+  --content-padding: 1.25rem;
+
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+
+
+  --bp-mobile: 700px;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+
+  background-color: var(--color-bg);
+
+  color: var(--color-text);
+
+  font-family: var(--font-family);
+
+  line-height: var(--line-height-normal);
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
