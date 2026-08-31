@@ -1,6 +1,7 @@
 import React from "react";
+import Badge from "./Badge";
 
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
   return (
     <nav className="navbar">
       <a href="#top" className="logo">
@@ -12,7 +13,11 @@ const Navbar = () => {
 
         <a href="#products">All Products</a>
 
-        <a href="#cart">Cart</a>
+        <a href="#cart">
+          Cart
+          { cartCount > 0 ? <Badge text={cartCount} color="count" /> : null }
+          </a>
+
       </div>
     </nav>
   );

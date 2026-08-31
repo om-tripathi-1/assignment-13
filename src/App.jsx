@@ -134,9 +134,14 @@ function App() {
     return 0;
   });
 
+  const totalCartItems = cartItems.reduce(
+  (total, item) => total + item.quantity,
+  0
+);
+
   return (
     <div id="top">
-      <Navbar />
+      <Navbar cartCount={totalCartItems} />
 
       <main>
         <ProductDescription />
