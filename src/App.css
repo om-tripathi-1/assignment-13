@@ -37,6 +37,40 @@
   border-color: var(--color-border);
 }
 
+.auth-form {
+  width: min(28rem, 90%);
+  margin: var(--space-3xl) auto;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background-color: var(--color-surface);
+}
+
+.auth-heading {
+  margin-bottom: var(--space-md);
+}
+
+.auth-form input {
+  min-height: 3rem;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.auth-form button {
+  margin-top: var(--space-md);
+}
+
+.auth-switch-link {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .description-section {
   width: var(--container-width);
   min-height: 70vh;
@@ -49,8 +83,8 @@
   background-color: var(--color-surface);
 }
 
-.description-section > div {
-  max-width: 850px;
+.decription-container {
+  max-width: 54rem;
 }
 
 .hero-label,

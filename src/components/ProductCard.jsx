@@ -6,6 +6,7 @@ import Button from "./Button";
 const ProductCard = ({
   name,
   price,
+  image_url,
   image,
   category,
   onAddToCart,
@@ -13,7 +14,7 @@ const ProductCard = ({
 }) => {
   return (
     <div className="product-card">
-      <img src={image} alt={name} className ="product-image" />
+      <img src={image_url || image} alt={name} className="product-image" />
       <div className="product-content">
         <Badge text={category} color={category} />
         <h3 className="product-title">{name}</h3>

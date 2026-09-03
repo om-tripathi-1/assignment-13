@@ -1,23 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Badge from "./Badge";
 
-const Navbar = ({cartCount}) => {
+const Navbar = ({ cartCount, user, onLogout }) => {
   return (
     <nav className="navbar">
-      <a href="#top" className="logo">
+      <Link to="/" className="logo">
         Shopsy
-      </a>
+      </Link>
 
       <div className="nav-links">
-        <a href="#description">Product Description</a>
-
-        <a href="#products">All Products</a>
-
-        <a href="#cart">
+        <Link to="/products">All Products</Link>
+        <Link to="/cart">
           Cart
-          { cartCount > 0 ? <Badge text={cartCount} color="count" /> : null }
-          </a>
+          {cartCount > 0 ? <Badge text={cartCount} color="count" /> : null}
+        </Link>
 
+        {user ? (
+          <>
+            <button className="btn btn-outline" onClick={onLogout}>
+              Logout
+            </button>
+          </>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
       </div>
     </nav>
   );

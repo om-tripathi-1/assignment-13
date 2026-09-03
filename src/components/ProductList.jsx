@@ -17,6 +17,7 @@ const ProductList = ({ products, onAddToCart, cartItems }) => {
             key={product.id}
             name={product.name}
             price={product.price}
+            image_url={product.image_url}
             image={product.image}
             category={product.category}
             isInCart={isInCart}

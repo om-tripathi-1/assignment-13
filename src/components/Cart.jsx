@@ -30,7 +30,7 @@ const Cart = ({ cartItems, onIncrease, onDecrease, onRemove, onClear }) => {
       <div className="cart-header">
         <h2 className="cart-heading">
           Your Cart
-          <Badge text={totalItems} color="count" />
+          <Badge text={totalItems + " items"} color="count" />
         </h2>
 
         <Button label="Clear Cart" variant="danger" onClick={onClear} />
@@ -43,9 +43,9 @@ const Cart = ({ cartItems, onIncrease, onDecrease, onRemove, onClear }) => {
             name={item.name}
             price={item.price}
             quantity={item.quantity}
-            onIncrease={() => onIncrease(item.id)}
-            onDecrease={() => onDecrease(item.id)}
-            onRemove={() => onRemove(item.id)}
+            onIncrease={() => onIncrease(item.cartItemId)}
+            onDecrease={() => onDecrease(item.cartItemId)}
+            onRemove={() => onRemove(item.cartItemId)}
           />
         ))}
       </div>

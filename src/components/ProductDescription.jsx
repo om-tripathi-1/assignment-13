@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductDescription = () => {
   return (
     <section id="description" className="description-section">
-      <div>
+      <div className="decription-container">
         <span className="hero-label">Everything you need</span>
 
         <h1 className="hero-heading">
@@ -17,9 +18,9 @@ const ProductDescription = () => {
           and lifestyle products designed to make your everyday life easier.
         </p>
 
-        <a href="#products" className="hero-button">
+        <Link to="/products" className="hero-button">
           Explore Products
-        </a>
+        </Link>
       </div>
     </section>
   );
