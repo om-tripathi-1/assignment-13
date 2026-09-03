@@ -1,16 +1,23 @@
-# React + Vite
+# Product Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple product catalogue built with React and Supabase. Browse products and log in to add items to your cart.
 
-Currently, two official plugins are available:
+## Login
+### Example Id and passwords
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Email: `example1@gmail.com`
+- Password: `1234`
 
-## React Compiler
+- Email: `example2@gmail.com`
+- Password: `1234`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Email: `example3@gmail.com`
+- Password: `1234`
 
-## Expanding the ESLint configuration
+- Email: `example4@gmail.com`
+- Password: `1234`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Registration
+
+After registering, verify your email using the verification link before logging in.
+
